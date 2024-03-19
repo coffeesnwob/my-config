@@ -16,16 +16,17 @@ filetype indent on
 call plug#begin()
 
 Plug 'preservim/nerdtree' " NerdTree
-Plug 'ryanoasis/vim-devicons' " Developer iCons
+Plug 'ryanoasis/vim-devicons' " Developer-iCons
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 Plug 'jiangmiao/auto-pairs' " Auto Pairs
 Plug 'preservim/nerdcommenter' " NerdCommenter
 Plug 'tpope/vim-surround' " Vim-surround
-Plug 'airblade/vim-gitgutter' " Vim gitgutter
+Plug 'airblade/vim-gitgutter' " Vim-gitgutter
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim' " File Finder
 Plug 'vim-airline/vim-airline' " airline
+Plug 'alvan/vim-closetag' " auto-close_tags
 
 call plug#end()
 
@@ -60,3 +61,6 @@ let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
+
+" File finder
+nnoremap <C-k> :Files<CR>
